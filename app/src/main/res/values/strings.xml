@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Coding Guide</string>
+    <string name="welcome_to_coding_guide">Welcome to Coding Guide</string>
 </resources>
