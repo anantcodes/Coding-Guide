@@ -14,6 +14,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import com.anant.codingguide.R
 import com.anant.codingguide.fragment.HomeFragment
+import com.anant.codingguide.fragment.LanguageFragment
 
 
 class ControlActivity : AppCompatActivity() {
@@ -52,7 +53,10 @@ class ControlActivity : AppCompatActivity() {
                 }
 
                 R.id.language->{
-                    Toast.makeText(applicationContext,"Language",Toast.LENGTH_LONG).show()
+                    supportFragmentManager.beginTransaction().replace(R.id.frame,
+                        LanguageFragment()
+                    ).commit()
+                    drawerLayout.closeDrawers()
                 }
 
                 R.id.dev->{
