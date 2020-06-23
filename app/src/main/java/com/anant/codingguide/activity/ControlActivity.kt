@@ -140,6 +140,16 @@ class ControlActivity : AppCompatActivity() {
         supportActionBar?.title="Home"
     }
 
+    override fun onBackPressed() {
+        val frag = supportFragmentManager.findFragmentById(R.id.frame)
+
+        when(frag){
+            !is HomeFragment -> openHome()
+
+            else -> super.onBackPressed()
+        }
+    }
+
 
 
 }
