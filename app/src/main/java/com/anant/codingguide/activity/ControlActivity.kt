@@ -13,6 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import com.anant.codingguide.R
+import com.anant.codingguide.fragment.DevelopmentFragment
 import com.anant.codingguide.fragment.HomeFragment
 import com.anant.codingguide.fragment.LanguageFragment
 
@@ -60,7 +61,10 @@ class ControlActivity : AppCompatActivity() {
                 }
 
                 R.id.dev->{
-                    Toast.makeText(applicationContext,"Dev",Toast.LENGTH_LONG).show()
+                    supportFragmentManager.beginTransaction().replace(R.id.frame,
+                        DevelopmentFragment()
+                    ).commit()
+                    drawerLayout.closeDrawers()
                 }
 
                 R.id.quest->{
