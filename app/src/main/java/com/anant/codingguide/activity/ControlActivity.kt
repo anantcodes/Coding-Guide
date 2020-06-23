@@ -24,6 +24,7 @@ class ControlActivity : AppCompatActivity() {
     lateinit var toolbar: Toolbar
     lateinit var frameLayout: FrameLayout
     lateinit var navigationView: NavigationView
+    var previousMenuItem:MenuItem?=null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +49,14 @@ class ControlActivity : AppCompatActivity() {
 
         navigationView.setNavigationItemSelectedListener {
 
+
+            if(previousMenuItem != null){
+                previousMenuItem?.isChecked=false
+            }
+            it.isCheckable=true
+            it.isChecked=true
+            previousMenuItem=it
+
             when(it.itemId)
             {
                 R.id.home->{
@@ -59,7 +68,7 @@ class ControlActivity : AppCompatActivity() {
                 R.id.language->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         LanguagesFragment()
-                    ).addToBackStack("Language").commit()
+                    ).commit()
                     supportActionBar?.title="Languages"
                     drawerLayout.closeDrawers()
                 }
@@ -67,7 +76,7 @@ class ControlActivity : AppCompatActivity() {
                 R.id.dev->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         DevelopmentFragment()
-                    ).addToBackStack("Development").commit()
+                    ).commit()
                     supportActionBar?.title="Development"
                     drawerLayout.closeDrawers()
                 }
@@ -75,7 +84,7 @@ class ControlActivity : AppCompatActivity() {
                 R.id.quest->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         CompetitiveProgrammingFragment()
-                    ).addToBackStack("Question").commit()
+                    ).commit()
                     supportActionBar?.title="Competitive programming"
                     drawerLayout.closeDrawers()
                 }
@@ -83,7 +92,7 @@ class ControlActivity : AppCompatActivity() {
                 R.id.inter->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         InterviewTipsFragment()
-                    ).addToBackStack("Interview").commit()
+                    ).commit()
                     supportActionBar?.title="Interview Tips"
                     drawerLayout.closeDrawers()
                 }
@@ -91,7 +100,7 @@ class ControlActivity : AppCompatActivity() {
                 R.id.compiler->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         CompilerFragment()
-                    ).addToBackStack("Compiler").commit()
+                    ).commit()
                     supportActionBar?.title="Code Compiler"
                     drawerLayout.closeDrawers()
                 }
@@ -138,6 +147,7 @@ class ControlActivity : AppCompatActivity() {
         transaction.replace(R.id.frame,fragment)
         transaction.commit()
         supportActionBar?.title="Home"
+        navigationView.setCheckedItem(R.id.home)
     }
 
     override fun onBackPressed() {
