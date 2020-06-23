@@ -36,9 +36,9 @@ class ControlActivity : AppCompatActivity() {
         frameLayout = findViewById(R.id.frame)
         navigationView = findViewById(R.id.navigationView)
 
-        supportFragmentManager.beginTransaction().replace(R.id.frame,HomeFragment()).addToBackStack("Home").commit()
+        openHome()
         supportActionBar?.title="Home"
-        
+
 
         setUpToolbar()
 
@@ -51,8 +51,7 @@ class ControlActivity : AppCompatActivity() {
             when(it.itemId)
             {
                 R.id.home->{
-                   supportFragmentManager.beginTransaction().replace(R.id.frame,HomeFragment()).addToBackStack("Home").commit()
-                    supportActionBar?.title="Home"
+                      openHome()
                     drawerLayout.closeDrawers()
 
                 }
@@ -118,7 +117,7 @@ class ControlActivity : AppCompatActivity() {
 
     fun setUpToolbar(){
         setSupportActionBar(toolbar)
-        supportActionBar?.title="Toolbar Title"
+            //supportActionBar?.title="Toolbar Title"
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
@@ -130,6 +129,15 @@ class ControlActivity : AppCompatActivity() {
             drawerLayout.openDrawer(GravityCompat.START)
         }
         return super.onOptionsItemSelected(item)
+    }
+
+   fun  openHome()
+    {
+        val fragment=HomeFragment()
+        val transaction=supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.frame,fragment)
+        transaction.commit()
+        supportActionBar?.title="Home"
     }
 
 
