@@ -47,42 +47,42 @@ class ControlActivity : AppCompatActivity() {
             when(it.itemId)
             {
                 R.id.home->{
-                   supportFragmentManager.beginTransaction().replace(R.id.frame,HomeFragment()).commit()
+                   supportFragmentManager.beginTransaction().replace(R.id.frame,HomeFragment()).addToBackStack("Home").commit()
                     drawerLayout.closeDrawers()
                 }
 
                 R.id.language->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         LanguageFragment()
-                    ).commit()
+                    ).addToBackStack("Language").commit()
                     drawerLayout.closeDrawers()
                 }
 
                 R.id.dev->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         DevelopmentFragment()
-                    ).commit()
+                    ).addToBackStack("Development").commit()
                     drawerLayout.closeDrawers()
                 }
 
                 R.id.quest->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         QuestionFragment()
-                    ).commit()
+                    ).addToBackStack("Question").commit()
                     drawerLayout.closeDrawers()
                 }
 
                 R.id.inter->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         InterviewFragment()
-                    ).commit()
+                    ).addToBackStack("Interview").commit()
                     drawerLayout.closeDrawers()
                 }
 
                 R.id.compiler->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         CompilerFragment()
-                    ).commit()
+                    ).addToBackStack("Compiler").commit()
                     drawerLayout.closeDrawers()
                 }
 
