@@ -4,6 +4,7 @@ package com.anant.codingguide.activity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -40,6 +41,45 @@ class ControlActivity : AppCompatActivity() {
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
 
+        navigationView.setNavigationItemSelectedListener {
+
+            when(it.itemId)
+            {
+                R.id.home->{
+                    Toast.makeText(applicationContext,"Home",Toast.LENGTH_LONG).show()
+                }
+
+                R.id.language->{
+                    Toast.makeText(applicationContext,"Language",Toast.LENGTH_LONG).show()
+                }
+
+                R.id.dev->{
+                    Toast.makeText(applicationContext,"Dev",Toast.LENGTH_LONG).show()
+                }
+
+                R.id.quest->{
+                    Toast.makeText(applicationContext,"Quest",Toast.LENGTH_LONG).show()
+                }
+
+                R.id.inter->{
+                    Toast.makeText(applicationContext,"Interview",Toast.LENGTH_LONG).show()
+                }
+
+                R.id.exit->{
+                    Toast.makeText(applicationContext,"Exit",Toast.LENGTH_LONG).show()
+                }
+                
+
+            }
+
+
+
+
+
+
+            return@setNavigationItemSelectedListener true
+        }
+
     }
 
     fun setUpToolbar(){
@@ -48,7 +88,7 @@ class ControlActivity : AppCompatActivity() {
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
-    
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id=item.itemId
         if(id==android.R.id.home)
