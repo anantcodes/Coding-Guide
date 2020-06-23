@@ -16,6 +16,7 @@ import com.anant.codingguide.R
 import com.anant.codingguide.fragment.DevelopmentFragment
 import com.anant.codingguide.fragment.HomeFragment
 import com.anant.codingguide.fragment.LanguageFragment
+import com.anant.codingguide.fragment.QuestionFragment
 
 
 class ControlActivity : AppCompatActivity() {
@@ -68,7 +69,10 @@ class ControlActivity : AppCompatActivity() {
                 }
 
                 R.id.quest->{
-                    Toast.makeText(applicationContext,"Quest",Toast.LENGTH_LONG).show()
+                    supportFragmentManager.beginTransaction().replace(R.id.frame,
+                        QuestionFragment()
+                    ).commit()
+                    drawerLayout.closeDrawers()
                 }
 
                 R.id.inter->{
