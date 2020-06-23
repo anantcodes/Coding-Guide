@@ -36,6 +36,10 @@ class ControlActivity : AppCompatActivity() {
         frameLayout = findViewById(R.id.frame)
         navigationView = findViewById(R.id.navigationView)
 
+        supportFragmentManager.beginTransaction().replace(R.id.frame,HomeFragment()).addToBackStack("Home").commit()
+        supportActionBar?.title="Home"
+        
+
         setUpToolbar()
 
         val actionBarDrawerToggle=ActionBarDrawerToggle(this@ControlActivity,drawerLayout,R.string.open_drawer,R.string.close_drawer)
