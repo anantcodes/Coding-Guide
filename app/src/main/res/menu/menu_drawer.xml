@@ -18,6 +18,9 @@
         android:id="@+id/inter"
         android:title="@string/interview"/>
     <item
+        android:id="@+id/compiler"
+        android:title="@string/code_compiler"/>
+    <item
         android:id="@+id/exit"
         android:title="@string/exit"/>
 

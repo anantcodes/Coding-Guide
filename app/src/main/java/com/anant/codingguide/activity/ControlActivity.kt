@@ -79,9 +79,18 @@ class ControlActivity : AppCompatActivity() {
                     drawerLayout.closeDrawers()
                 }
 
+                R.id.compiler->{
+                    supportFragmentManager.beginTransaction().replace(R.id.frame,
+                        CompilerFragment()
+                    ).commit()
+                    drawerLayout.closeDrawers()
+                }
+
+
                 R.id.exit->{
                     Toast.makeText(applicationContext,"Exit",Toast.LENGTH_LONG).show()
                 }
+
 
 
             }
