@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/language"
+        android:title="@string/languages"/>
+    <item
+        android:id="@+id/dev"
+        android:title="@string/development"/>
+    <item
+        android:id="@+id/quest"
+        android:title="@string/questions"/>
+    <item
+        android:id="@+id/inter"
+        android:title="@string/interview"/>
+    <item
+        android:id="@+id/exit"
+        android:title="@string/exit"/>
+
+
+</menu>

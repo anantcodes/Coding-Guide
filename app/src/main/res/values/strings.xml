@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Coding Guide</string>
     <string name="welcome_to_coding_guide">Welcome to Coding Guide</string>
+    <string name="home">Home</string>
+    <string name="languages">Languages</string>
+    <string name="development">Development</string>
+    <string name="questions">Questions</string>
+    <string name="interview">Interview</string>
+    <string name="exit">Exit</string>
 </resources>
