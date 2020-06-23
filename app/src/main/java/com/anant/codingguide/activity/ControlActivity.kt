@@ -1,13 +1,15 @@
-package com.anant.codingguide
+package com.anant.codingguide.activity
 
-import androidx.appcompat.app.AppCompatActivity
+//import android.widget.Toolbar
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.FrameLayout
-import android.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.widget.Toolbar
+import com.anant.codingguide.R
+
 
 class ControlActivity : AppCompatActivity() {
 
@@ -18,19 +20,17 @@ class ControlActivity : AppCompatActivity() {
     lateinit var frameLayout: FrameLayout
     lateinit var navigationView: NavigationView
 
-    var previousMenuItem: MenuItem?=null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_control)
 
-        drawerLayout=findViewById(R.id.drawerLayout)
-        coordinatorLayout=findViewById(R.id.coordinatorLayout)
-        toolbar=findViewById(R.id.toolbar)
-        frameLayout=findViewById(R.id.frame)
-        navigationView=findViewById(R.id.navigationView)
-
-
+        drawerLayout = findViewById(R.id.drawerLayout)
+        coordinatorLayout = findViewById(R.id.coordinatorLayout)
+        toolbar = findViewById(R.id.toolbar)
+        frameLayout = findViewById(R.id.frame)
+        navigationView = findViewById(R.id.navigationView)
     }
 }
+
+

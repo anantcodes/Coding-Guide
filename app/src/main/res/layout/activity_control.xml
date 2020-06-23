@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
-    tools:context=".ControlActivity">
+    tools:context=".activity.ControlActivity">
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
