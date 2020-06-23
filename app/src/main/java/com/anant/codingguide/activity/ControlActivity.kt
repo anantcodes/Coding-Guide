@@ -13,10 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import com.anant.codingguide.R
-import com.anant.codingguide.fragment.DevelopmentFragment
-import com.anant.codingguide.fragment.HomeFragment
-import com.anant.codingguide.fragment.LanguageFragment
-import com.anant.codingguide.fragment.QuestionFragment
+import com.anant.codingguide.fragment.*
 
 
 class ControlActivity : AppCompatActivity() {
@@ -76,7 +73,10 @@ class ControlActivity : AppCompatActivity() {
                 }
 
                 R.id.inter->{
-                    Toast.makeText(applicationContext,"Interview",Toast.LENGTH_LONG).show()
+                    supportFragmentManager.beginTransaction().replace(R.id.frame,
+                        InterviewFragment()
+                    ).commit()
+                    drawerLayout.closeDrawers()
                 }
 
                 R.id.exit->{
