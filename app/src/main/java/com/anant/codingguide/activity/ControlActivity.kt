@@ -13,6 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import com.anant.codingguide.R
+import com.anant.codingguide.fragment.HomeFragment
 
 
 class ControlActivity : AppCompatActivity() {
@@ -46,7 +47,8 @@ class ControlActivity : AppCompatActivity() {
             when(it.itemId)
             {
                 R.id.home->{
-                    Toast.makeText(applicationContext,"Home",Toast.LENGTH_LONG).show()
+                   supportFragmentManager.beginTransaction().replace(R.id.frame,HomeFragment()).commit()
+                    drawerLayout.closeDrawers()
                 }
 
                 R.id.language->{
@@ -68,7 +70,7 @@ class ControlActivity : AppCompatActivity() {
                 R.id.exit->{
                     Toast.makeText(applicationContext,"Exit",Toast.LENGTH_LONG).show()
                 }
-                
+
 
             }
 
