@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.QuestionFragment">
+    tools:context=".fragment.InterviewTipsFragment">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Question"
+        android:text="Interview"
         android:textSize="20sp"
         android:padding="10dp"/>
 

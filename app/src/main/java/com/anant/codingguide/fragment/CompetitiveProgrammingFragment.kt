@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.anant.codingguide.R
 
 
-class LanguageFragment : Fragment() {
+class CompetitiveProgrammingFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -16,7 +16,7 @@ class LanguageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_language, container, false)
+        return inflater.inflate(R.layout.fragment_competitiveprogramming, container, false)
     }
 
 

@@ -13,10 +13,10 @@
         android:title="@string/development"/>
     <item
         android:id="@+id/quest"
-        android:title="@string/questions"/>
+        android:title="@string/competitive_programming"/>
     <item
         android:id="@+id/inter"
-        android:title="@string/interview"/>
+        android:title="@string/interview_tips"/>
     <item
         android:id="@+id/compiler"
         android:title="@string/code_compiler"/>

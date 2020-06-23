@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.anant.codingguide.R
 
 
-class InterviewFragment : Fragment() {
+class LanguagesFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -16,7 +16,7 @@ class InterviewFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_interview, container, false)
+        return inflater.inflate(R.layout.fragment_languages, container, false)
     }
 
 

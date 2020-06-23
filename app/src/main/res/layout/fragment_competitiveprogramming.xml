@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.LanguageFragment">
+    tools:context=".fragment.CompetitiveProgrammingFragment">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Language"
+        android:text="Question"
         android:textSize="20sp"
         android:padding="10dp"/>
 

@@ -48,13 +48,16 @@ class ControlActivity : AppCompatActivity() {
             {
                 R.id.home->{
                    supportFragmentManager.beginTransaction().replace(R.id.frame,HomeFragment()).addToBackStack("Home").commit()
+                    supportActionBar?.title="Home"
                     drawerLayout.closeDrawers()
+
                 }
 
                 R.id.language->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
-                        LanguageFragment()
+                        LanguagesFragment()
                     ).addToBackStack("Language").commit()
+                    supportActionBar?.title="Languages"
                     drawerLayout.closeDrawers()
                 }
 
@@ -62,20 +65,23 @@ class ControlActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         DevelopmentFragment()
                     ).addToBackStack("Development").commit()
+                    supportActionBar?.title="Development"
                     drawerLayout.closeDrawers()
                 }
 
                 R.id.quest->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
-                        QuestionFragment()
+                        CompetitiveProgrammingFragment()
                     ).addToBackStack("Question").commit()
+                    supportActionBar?.title="Competitive programming"
                     drawerLayout.closeDrawers()
                 }
 
                 R.id.inter->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
-                        InterviewFragment()
+                        InterviewTipsFragment()
                     ).addToBackStack("Interview").commit()
+                    supportActionBar?.title="Interview Tips"
                     drawerLayout.closeDrawers()
                 }
 
@@ -83,6 +89,7 @@ class ControlActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         CompilerFragment()
                     ).addToBackStack("Compiler").commit()
+                    supportActionBar?.title="Code Compiler"
                     drawerLayout.closeDrawers()
                 }
 
