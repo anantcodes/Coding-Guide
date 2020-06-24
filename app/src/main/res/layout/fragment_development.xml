@@ -148,7 +148,7 @@
             android:id="@+id/txtAPID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from many structural and unstructured data.Data science is related to data mining, deep learning and big data."
+           android:text="An application programming interface (API) is a computing interface which defines interactions between multiple software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc. It can also provide extension mechanisms so that users can extend existing functionality in various ways and to varying degrees. An API can be entirely custom, specific to a component, or it can be designed based on an industry standard to ensure interoperability. "
             android:layout_below="@+id/txtAPI"
             android:textAlignment="center"/>
 
@@ -156,7 +156,7 @@
             android:id="@+id/txtAPILang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="An application programming interface (API) is a computing interface which defines interactions between multiple software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc. It can also provide extension mechanisms so that users can extend existing functionality in various ways and to varying degrees. An API can be entirely custom, specific to a component, or it can be designed based on an industry standard to ensure interoperability. "
+           android:text="What you need to know: APIs are written for specific platforms or functions, and each API will have the programming language of the platform/device/site/service it’s designed for"
             android:layout_below="@+id/txtAPID"
             android:textStyle="bold"/>
 
@@ -166,6 +166,43 @@
             android:layout_height="wrap_content"
             android:text="More about API Development"
             android:layout_below="@id/txtAPILang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:id="@+id/txtSSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security Software Development"
+            android:layout_below="@+id/btnAPI"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtSSDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security, as part of the software development process, is an ongoing process involving people and practices, and ensures application confidentiality, integrity, and availability. Secure software is the result of security aware software development processes where security is built in and thus software is developed with security in mind. Security is most effective if planned and managed throughout every stage of software development life cycle (SDLC), especially in critical applications or those that process sensitive information."
+            android:layout_below="@+id/txtSSD"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtSSDLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What you need to know: the programming language relevant to the system that needs to be tested"
+            android:layout_below="@+id/txtSSDD"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnSSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More about Security Software Development"
+            android:layout_below="@id/txtSSDLang"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="100dp"/>
