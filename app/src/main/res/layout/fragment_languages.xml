@@ -194,6 +194,35 @@
         android:text="Learn JavaScript"
         android:layout_below="@id/txtJSDD"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/txtGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Golang"
+        android:layout_below="@+id/btnJS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtGoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go is a statically typed , compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson.Go is syntactically similar to C, but with memory safety, garbage collection, structural typing , and CSP-style concurrency ."
+        android:layout_below="@+id/txtGo"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn Golang"
+        android:layout_below="@id/txtGoD"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="50dp"/>
 
