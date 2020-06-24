@@ -25,6 +25,7 @@ class CompetitiveProgrammingFragment : Fragment() {
     lateinit var txtHere4:TextView
     lateinit var txtHere5:TextView
     lateinit var btnCodeChef:Button
+    lateinit var btnCodeforces:Button
 
 
     override fun onCreateView(
@@ -41,6 +42,7 @@ class CompetitiveProgrammingFragment : Fragment() {
         txtHere4=view.findViewById(R.id.txtHere4)
         txtHere5=view.findViewById(R.id.txtHere5)
         btnCodeChef=view.findViewById(R.id.btnCodeChef)
+        btnCodeforces=view.findViewById(R.id.btnCodeforces)
 
 
         txtHere1.setOnClickListener {
@@ -71,6 +73,11 @@ class CompetitiveProgrammingFragment : Fragment() {
 
         btnCodeChef.setOnClickListener {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.codechef.com/problems/school/?sort_by=SuccessfulSubmission&sorting_order=desc")))
+
+        }
+
+        btnCodeforces.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://codeforces.com/problemset")))
 
         }
 
