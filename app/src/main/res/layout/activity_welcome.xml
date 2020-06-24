@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/welcome_to_coding_guide"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp"
+        android:textSize="28sp"
         android:textColor="#1a237e"
         android:padding="16dp"
         android:layout_marginTop="40dp"

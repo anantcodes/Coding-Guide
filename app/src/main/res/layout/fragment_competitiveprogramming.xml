@@ -1,16 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.CompetitiveProgrammingFragment">
+    tools:context=".fragment.CompetitiveProgrammingFragment"
+    android:background="#bbdefb">
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Question"
-        android:textSize="20sp"
+        android:id="@+id/txtHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How to prepare for Competitive Programming?"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"
         android:padding="10dp"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/txtChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1) Choose a programming language:"
+        android:layout_below="@+id/txtHead"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtChoose"
+        android:text="To learn a particular language click "
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/txtHere1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="here"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@id/txtChoose"
+        android:layout_toEndOf="@+id/txtLang"
+        android:textSize="16sp"/>
+
+
+
+    <TextView
+        android:id="@+id/txtTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2) Understand the Concept of Time and Space Complexity:"
+        android:layout_below="@+id/txtHere1"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To know more about Time Complexity click "
+        android:textSize="16sp"
+        android:layout_below="@+id/txtTC"
+        android:textColor="#000000"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/txtHere2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="here"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@id/txtTC"
+        android:layout_toEndOf="@+id/txtT"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To know more about Space Complexity click "
+        android:textSize="16sp"
+        android:layout_below="@+id/txtT"
+        android:textColor="#000000"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/txtHere3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="here"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@id/txtT"
+        android:layout_toEndOf="@+id/txtS"
+        android:textSize="16sp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

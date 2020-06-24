@@ -1,14 +1,26 @@
 package com.anant.codingguide.fragment
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.anant.codingguide.R
+import kotlinx.android.synthetic.main.activity_control.*
+import kotlinx.android.synthetic.main.fragment_competitiveprogramming.*
+import java.lang.reflect.Array.newInstance
+import java.security.cert.CertPathBuilder.getInstance
+import java.util.Calendar.getInstance
 
 
 class CompetitiveProgrammingFragment : Fragment() {
+
+    lateinit var txtHere1:TextView
+    lateinit var txtHere2:TextView
+    lateinit var txtHere3:TextView
 
 
     override fun onCreateView(
@@ -16,7 +28,37 @@ class CompetitiveProgrammingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_competitiveprogramming, container, false)
+        val view=inflater.inflate(R.layout.fragment_competitiveprogramming, container, false)
+
+
+        txtHere1=view.findViewById(R.id.txtHere1)
+        txtHere2=view.findViewById(R.id.txtHere2)
+        txtHere3=view.findViewById(R.id.txtHere3)
+
+
+        txtHere1.setOnClickListener {
+            fragmentManager?.beginTransaction()?.replace(R.id.frame,LanguagesFragment())?.commit()
+            activity?.title = "Programming Languages"
+        }
+
+
+        txtHere2.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://en.wikipedia.org/wiki/Time_complexity")))
+
+        }
+
+        txtHere3.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://en.wikipedia.org/wiki/Space_complexity")))
+
+        }
+
+
+
+
+
+
+
+        return view
     }
 
 
