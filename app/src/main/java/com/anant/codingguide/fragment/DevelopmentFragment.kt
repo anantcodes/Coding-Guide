@@ -15,6 +15,8 @@ class DevelopmentFragment : Fragment() {
 
 
     lateinit var btnWeb:Button
+    lateinit var btnMobile:Button
+    lateinit var btnDS:Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,12 +27,31 @@ class DevelopmentFragment : Fragment() {
 
 
         btnWeb=view.findViewById(R.id.btnWeb)
+        btnMobile=view.findViewById(R.id.btnMobile)
+        btnDS=view.findViewById(R.id.btnDS)
 
         btnWeb.setOnClickListener {
 
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/can-start-learn-web-development/")))
 
         }
+
+
+        btnMobile.setOnClickListener {
+
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tutorialspoint.com/mobile_development_tutorials.htm")))
+
+        }
+
+        btnDS.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/what-is-data-science/")))
+
+        }
+
+
+
+
+
 
 
         return view
