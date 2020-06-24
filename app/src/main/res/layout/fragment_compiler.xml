@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.CompilerFragment">
+    tools:context=".fragment.CompilerFragment"
+    android:background="#bbdefb">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Compiler"
+        android:id="@+id/txtReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready to code?"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click below to open your IDE"
+        android:layout_below="@+id/txtReady"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
         android:textSize="20sp"
-        android:padding="10dp"/>
+        android:layout_marginTop="40dp"/>
 
+    <ImageView
+        android:id="@+id/icBelow"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txtClick"
+        android:src="@drawable/ic_below"
+        android:layout_centerHorizontal="true"/>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnIde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IDEONE"
+        android:layout_below="@+id/icBelow"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
