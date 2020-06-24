@@ -24,20 +24,13 @@
 
 
     <TextView
-        android:id="@+id/txtList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Here's a list of some common programming languages:"
-        android:textSize="18sp"
-        android:layout_below="@+id/txtHead"/>
-
-    <TextView
         android:id="@+id/txtJava"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Java"
-        android:layout_below="@+id/txtList"
+        android:layout_below="@+id/txtHead"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:textSize="30sp"
         android:textColor="#000000"/>
 
@@ -57,6 +50,66 @@
         android:layout_below="@id/txtJavaD"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"/>
+
+
+    <TextView
+    android:id="@+id/txtCPlus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="C++"
+    android:layout_below="@+id/btnJava"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:textSize="30sp"
+    android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtCPlusD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C++  is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language. The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Oracle, and IBM, so it is available on many platforms."
+        android:layout_below="@+id/txtCPlus"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnCPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn C++"
+        android:layout_below="@id/txtCPlusD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+    <TextView
+        android:id="@+id/txtC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:layout_below="@+id/btnCPlus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. C is an imperative procedural language. It was designed to be compiled to provide low-level access to memory and language constructs that map efficiently to machine instructions, all with minimal runtime support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant C program written with portability in mind can be compiled for a wide variety of computer platforms and operating systems with few changes to its source code."
+        android:layout_below="@+id/txtC"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn C"
+        android:layout_below="@id/txtCD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
 
 
 

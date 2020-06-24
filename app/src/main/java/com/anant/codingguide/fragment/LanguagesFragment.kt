@@ -15,6 +15,9 @@ import kotlinx.android.synthetic.main.fragment_languages.*
 class LanguagesFragment : Fragment() {
 
    lateinit var btnJava:Button
+    lateinit var btnCPlus:Button
+    lateinit var btnC:Button
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,12 +27,28 @@ class LanguagesFragment : Fragment() {
         val view=inflater.inflate(R.layout.fragment_languages, container, false)
 
        btnJava=view.findViewById(R.id.btnJava)
+        btnCPlus=view.findViewById(R.id.btnCPlus)
+        btnC=view.findViewById(R.id.btnC)
 
         btnJava.setOnClickListener {
-            val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/java-tutorials/?ref=lbp"))
-            activity?.startActivity(i)
+
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/java-tutorials/")))
 
         }
+
+        btnCPlus.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/cpp-tutorial/")))
+
+        }
+
+        btnC.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/c-programming-language/")))
+
+        }
+
+
+
+
 
 
 
