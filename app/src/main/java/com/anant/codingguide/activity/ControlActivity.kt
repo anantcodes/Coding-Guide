@@ -89,13 +89,7 @@ class ControlActivity : AppCompatActivity() {
                     drawerLayout.closeDrawers()
                 }
 
-                R.id.inter->{
-                    supportFragmentManager.beginTransaction().replace(R.id.frame,
-                        InterviewTipsFragment()
-                    ).commit()
-                    supportActionBar?.title="Interview Tips"
-                    drawerLayout.closeDrawers()
-                }
+
 
                 R.id.compiler->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
