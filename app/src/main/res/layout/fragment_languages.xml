@@ -280,8 +280,40 @@
         android:text="Learn HTML"
         android:layout_below="@id/txtHtmlD"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/txtCSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CSS"
+        android:layout_below="@+id/btnHtml"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtCSSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content."
+       android:layout_below="@+id/txtCSS"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnCSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn CSS"
+        android:layout_below="@id/txtCSSD"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="50dp"/>
+
+
+
 
 
 

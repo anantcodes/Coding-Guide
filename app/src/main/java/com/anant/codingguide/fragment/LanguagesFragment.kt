@@ -23,6 +23,7 @@ class LanguagesFragment : Fragment() {
     lateinit var btnGo:Button
     lateinit var btnCS:Button
     lateinit var btnHtml:Button
+    lateinit var btnCSS:Button
 
 
     override fun onCreateView(
@@ -41,6 +42,7 @@ class LanguagesFragment : Fragment() {
         btnGo=view.findViewById(R.id.btnGo)
         btnCS=view.findViewById(R.id.btnCS)
         btnHtml=view.findViewById(R.id.btnHtml)
+        btnCSS=view.findViewById(R.id.btnCSS)
 
         btnJava.setOnClickListener {
 
@@ -89,7 +91,12 @@ class LanguagesFragment : Fragment() {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/html-tutorials/")))
 
         }
-        
+
+        btnCSS.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/css-tutorials/")))
+
+        }
+
 
         return view
 

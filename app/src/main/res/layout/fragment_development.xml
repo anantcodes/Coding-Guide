@@ -1,16 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment.DevelopmentFragment">
+    android:layout_height="match_parent">
 
-
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Development"
-        android:textSize="20sp"
-        android:padding="10dp"/>
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".fragment.DevelopmentFragment">
 
-</FrameLayout>
+
+        <TextView
+            android:id="@+id/txtHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Software Development"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:id="@+id/txtWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Development"
+            android:layout_below="@+id/txtHead"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtWebD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web-based internet applications (web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web engineering, web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development."
+            android:layout_below="@+id/txtWeb"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtWebLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What you need to know: HTML, Javascript, Django, C/C++, ASP.NET, PHP, Python, Ruby, Rails etc."
+            android:layout_below="@+id/txtWebD"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Web Development"
+            android:layout_below="@id/txtWebLang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
