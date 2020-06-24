@@ -17,6 +17,7 @@ class LanguagesFragment : Fragment() {
    lateinit var btnJava:Button
     lateinit var btnCPlus:Button
     lateinit var btnC:Button
+    lateinit var btnPython:Button
 
 
     override fun onCreateView(
@@ -29,6 +30,7 @@ class LanguagesFragment : Fragment() {
        btnJava=view.findViewById(R.id.btnJava)
         btnCPlus=view.findViewById(R.id.btnCPlus)
         btnC=view.findViewById(R.id.btnC)
+        btnPython=view.findViewById(R.id.btnPython)
 
         btnJava.setOnClickListener {
 
@@ -43,6 +45,12 @@ class LanguagesFragment : Fragment() {
 
         btnC.setOnClickListener {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/c-programming-language/")))
+
+        }
+
+
+        btnPython.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/python-tutorial/")))
 
         }
 
