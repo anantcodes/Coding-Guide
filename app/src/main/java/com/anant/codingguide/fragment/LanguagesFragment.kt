@@ -21,6 +21,8 @@ class LanguagesFragment : Fragment() {
     lateinit var btnKotlin:Button
     lateinit var btnJS:Button
     lateinit var btnGo:Button
+    lateinit var btnCS:Button
+    lateinit var btnHtml:Button
 
 
     override fun onCreateView(
@@ -37,6 +39,8 @@ class LanguagesFragment : Fragment() {
         btnKotlin=view.findViewById(R.id.btnKotlin)
         btnJS=view.findViewById(R.id.btnJS)
         btnGo=view.findViewById(R.id.btnGo)
+        btnCS=view.findViewById(R.id.btnCS)
+        btnHtml=view.findViewById(R.id.btnHtml)
 
         btnJava.setOnClickListener {
 
@@ -76,13 +80,16 @@ class LanguagesFragment : Fragment() {
 
         }
 
+        btnCS.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/c-sharp-tutorial/")))
 
+        }
 
+        btnHtml.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/html-tutorials/")))
 
-
-
-
-
+        }
+        
 
         return view
 
