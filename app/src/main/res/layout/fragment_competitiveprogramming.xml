@@ -186,6 +186,24 @@
        android:layout_below="@id/txtCodeChef"
        android:layout_centerHorizontal="true"/>
 
+    <TextView
+        android:id="@+id/txtCodeforces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To practice on Codeforces :"
+        android:textSize="16sp"
+        android:layout_below="@+id/btnCodeChef"
+        android:textColor="#000000"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/btnCodeforces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Codeforces"
+        android:layout_below="@id/txtCodeforces"
+        android:layout_centerHorizontal="true"/>
+
 
 
 
