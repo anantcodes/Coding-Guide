@@ -165,9 +165,37 @@
         android:text="Learn Kotlin"
         android:layout_below="@id/txtKotlinD"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/txtJS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JavaScript"
+        android:layout_below="@+id/btnKotlin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtJSDD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JavaScript  often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions."
+        android:layout_below="@+id/txtJS"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnJS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn JavaScript"
+        android:layout_below="@id/txtJSDD"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="50dp"/>
-
 
 
 
