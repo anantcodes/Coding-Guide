@@ -157,19 +157,33 @@
         android:textSize="16sp"/>
 
 
+    <TextView
+        android:id="@+id/txtSolve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4) Practice:"
+        android:layout_below="@+id/txtHere5"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/txtCodeChef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To practice on CodeChef :"
+        android:textSize="16sp"
+        android:layout_below="@+id/txtSolve"
+        android:textColor="#000000"
+        android:layout_marginStart="10dp"/>
 
-
-
-
-
-
-
-
-
-
-
-
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Open CodeChef"
+       android:layout_below="@id/txtCodeChef"
+       android:layout_centerHorizontal="true"/>
 
 
 

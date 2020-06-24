@@ -72,6 +72,8 @@ class CompetitiveProgrammingFragment : Fragment() {
 
 
 
+
+
         return view
     }
 
