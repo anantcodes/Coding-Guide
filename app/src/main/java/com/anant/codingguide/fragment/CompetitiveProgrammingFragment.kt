@@ -21,6 +21,8 @@ class CompetitiveProgrammingFragment : Fragment() {
     lateinit var txtHere1:TextView
     lateinit var txtHere2:TextView
     lateinit var txtHere3:TextView
+    lateinit var txtHere4:TextView
+    lateinit var txtHere5:TextView
 
 
     override fun onCreateView(
@@ -34,6 +36,8 @@ class CompetitiveProgrammingFragment : Fragment() {
         txtHere1=view.findViewById(R.id.txtHere1)
         txtHere2=view.findViewById(R.id.txtHere2)
         txtHere3=view.findViewById(R.id.txtHere3)
+        txtHere4=view.findViewById(R.id.txtHere4)
+        txtHere5=view.findViewById(R.id.txtHere5)
 
 
         txtHere1.setOnClickListener {
@@ -49,6 +53,16 @@ class CompetitiveProgrammingFragment : Fragment() {
 
         txtHere3.setOnClickListener {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://en.wikipedia.org/wiki/Space_complexity")))
+
+        }
+
+        txtHere4.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/data-structures/")))
+
+        }
+
+        txtHere5.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/fundamentals-of-algorithms/")))
 
         }
 

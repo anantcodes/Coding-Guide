@@ -120,7 +120,7 @@
         android:id="@+id/txtD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To study Data Structures click "
+        android:text="To study about Data Structures click "
         android:textSize="16sp"
         android:layout_below="@+id/txtDSA"
         android:textColor="#000000"
@@ -135,6 +135,27 @@
         android:layout_below="@id/txtDSA"
         android:layout_toEndOf="@+id/txtD"
         android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To study about Algorithms click "
+        android:textSize="16sp"
+        android:layout_below="@+id/txtD"
+        android:textColor="#000000"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/txtHere5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="here"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@id/txtD"
+        android:layout_toEndOf="@+id/txtA"
+        android:textSize="16sp"/>
+
 
 
 
