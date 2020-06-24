@@ -19,6 +19,7 @@ class DevelopmentFragment : Fragment() {
     lateinit var btnDS:Button
     lateinit var btnAPI:Button
     lateinit var btnSSD:Button
+    lateinit var btnCC:Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +34,7 @@ class DevelopmentFragment : Fragment() {
         btnDS=view.findViewById(R.id.btnDS)
         btnAPI=view.findViewById(R.id.btnAPI)
         btnSSD=view.findViewById(R.id.btnSSD)
+        btnCC=view.findViewById(R.id.btnCC)
 
         btnWeb.setOnClickListener {
 
@@ -60,6 +62,12 @@ class DevelopmentFragment : Fragment() {
 
         btnSSD.setOnClickListener {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/principal-of-information-system-security-security-system-development-life-cycle/")))
+
+        }
+
+
+        btnCC.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/cloud-computing/")))
 
         }
 

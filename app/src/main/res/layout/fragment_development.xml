@@ -204,8 +204,47 @@
             android:text="More about Security Software Development"
             android:layout_below="@id/txtSSDLang"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+
+
+        <TextView
+            android:id="@+id/txtCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cloud Computing"
+            android:layout_below="@+id/btnSSD"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtCCD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cloud computing is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user. The term is generally used to describe data centers available to many users over the Internet. Large clouds, predominant today, often have functions distributed over multiple locations from central servers. If the connection to the user is relatively close, it may be designated an edge server."
+            android:layout_below="@+id/txtCC"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtCCLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What you need to know: Java, XML, R, Erlang, Google’s Go!, Clojure and others"
+            android:layout_below="@+id/txtCCD"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More about Cloud Computing"
+            android:layout_below="@id/txtCCLang"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="100dp"/>
+
 
 
 
