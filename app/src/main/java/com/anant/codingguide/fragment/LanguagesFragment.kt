@@ -18,6 +18,7 @@ class LanguagesFragment : Fragment() {
     lateinit var btnCPlus:Button
     lateinit var btnC:Button
     lateinit var btnPython:Button
+    lateinit var btnKotlin:Button
 
 
     override fun onCreateView(
@@ -31,6 +32,7 @@ class LanguagesFragment : Fragment() {
         btnCPlus=view.findViewById(R.id.btnCPlus)
         btnC=view.findViewById(R.id.btnC)
         btnPython=view.findViewById(R.id.btnPython)
+        btnKotlin=view.findViewById(R.id.btnKotlin)
 
         btnJava.setOnClickListener {
 
@@ -51,6 +53,12 @@ class LanguagesFragment : Fragment() {
 
         btnPython.setOnClickListener {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/python-tutorial/")))
+
+        }
+
+
+        btnKotlin.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/kotlin-programming-language/")))
 
         }
 
