@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import com.anant.codingguide.R
 import kotlinx.android.synthetic.main.activity_control.*
@@ -23,6 +24,7 @@ class CompetitiveProgrammingFragment : Fragment() {
     lateinit var txtHere3:TextView
     lateinit var txtHere4:TextView
     lateinit var txtHere5:TextView
+    lateinit var btnCodeChef:Button
 
 
     override fun onCreateView(
@@ -38,6 +40,7 @@ class CompetitiveProgrammingFragment : Fragment() {
         txtHere3=view.findViewById(R.id.txtHere3)
         txtHere4=view.findViewById(R.id.txtHere4)
         txtHere5=view.findViewById(R.id.txtHere5)
+        btnCodeChef=view.findViewById(R.id.btnCodeChef)
 
 
         txtHere1.setOnClickListener {
@@ -63,6 +66,11 @@ class CompetitiveProgrammingFragment : Fragment() {
 
         txtHere5.setOnClickListener {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/fundamentals-of-algorithms/")))
+
+        }
+
+        btnCodeChef.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.codechef.com/problems/school/?sort_by=SuccessfulSubmission&sorting_order=desc")))
 
         }
 
