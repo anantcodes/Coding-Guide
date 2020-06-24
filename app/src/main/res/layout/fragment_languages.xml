@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
     tools:context=".fragment.LanguagesFragment">
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Language"
-        android:textSize="20sp"
-        android:padding="10dp"/>
+        android:id="@+id/txtHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programming Languages"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
 
-</FrameLayout>
+
+    <TextView
+        android:id="@+id/txtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here's a list of some common programming languages:"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtHead"/>
+
+    <TextView
+        android:id="@+id/txtJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:layout_below="@+id/txtList"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtJavaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java is a general-purpose programming language that is class-based and object-oriented, and designed to have as few implementation dependencies as possible. It is intended to let application developers write once, run anywhere , meaning that compiled Java code can run on all platforms that support Java without the need of recompilation."
+        android:layout_below="@+id/txtJava"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn Java"
+        android:layout_below="@id/txtJavaD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>
