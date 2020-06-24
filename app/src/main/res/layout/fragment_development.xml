@@ -130,6 +130,43 @@
             android:text="More about Data Science"
             android:layout_below="@id/txtDSLang"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+
+        <TextView
+            android:id="@+id/txtAPI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="API Development"
+            android:layout_below="@+id/btnDS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/txtAPID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from many structural and unstructured data.Data science is related to data mining, deep learning and big data."
+            android:layout_below="@+id/txtAPI"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txtAPILang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An application programming interface (API) is a computing interface which defines interactions between multiple software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc. It can also provide extension mechanisms so that users can extend existing functionality in various ways and to varying degrees. An API can be entirely custom, specific to a component, or it can be designed based on an industry standard to ensure interoperability. "
+            android:layout_below="@+id/txtAPID"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnAPI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More about API Development"
+            android:layout_below="@id/txtAPILang"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="100dp"/>
 

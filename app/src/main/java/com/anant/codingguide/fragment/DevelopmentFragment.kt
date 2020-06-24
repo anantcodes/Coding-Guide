@@ -17,6 +17,7 @@ class DevelopmentFragment : Fragment() {
     lateinit var btnWeb:Button
     lateinit var btnMobile:Button
     lateinit var btnDS:Button
+    lateinit var btnAPI:Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,6 +30,7 @@ class DevelopmentFragment : Fragment() {
         btnWeb=view.findViewById(R.id.btnWeb)
         btnMobile=view.findViewById(R.id.btnMobile)
         btnDS=view.findViewById(R.id.btnDS)
+        btnAPI=view.findViewById(R.id.btnAPI)
 
         btnWeb.setOnClickListener {
 
@@ -45,6 +47,11 @@ class DevelopmentFragment : Fragment() {
 
         btnDS.setOnClickListener {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/what-is-data-science/")))
+
+        }
+
+        btnAPI.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.geeksforgeeks.org/introduction-to-apis/")))
 
         }
 
