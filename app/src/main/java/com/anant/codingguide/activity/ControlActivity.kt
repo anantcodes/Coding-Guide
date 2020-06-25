@@ -69,7 +69,7 @@ class ControlActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         LanguagesFragment()
                     ).commit()
-                    supportActionBar?.title="Languages"
+                    supportActionBar?.title="Programming languages"
                     drawerLayout.closeDrawers()
                 }
 

@@ -8,7 +8,7 @@
         android:title="@string/home"/>
     <item
         android:id="@+id/language"
-        android:title="@string/languages"/>
+        android:title="@string/programming_languages"/>
     <item
         android:id="@+id/dev"
         android:title="@string/development"/>
