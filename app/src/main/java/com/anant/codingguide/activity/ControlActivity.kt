@@ -80,7 +80,7 @@ class ControlActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         DevelopmentFragment()
                     ).commit()
-                    supportActionBar?.title="Development"
+                    supportActionBar?.title="Software Development"
                     drawerLayout.closeDrawers()
                 }
 
@@ -98,7 +98,7 @@ class ControlActivity : AppCompatActivity() {
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         CompilerFragment()
                     ).commit()
-                    supportActionBar?.title="Code Compiler"
+                    supportActionBar?.title="Test your Code"
                     drawerLayout.closeDrawers()
                 }
 

@@ -13,7 +13,7 @@
         android:icon="@drawable/ic_language"/>
     <item
         android:id="@+id/dev"
-        android:title="@string/development"
+        android:title="@string/software_development"
         android:icon="@drawable/ic_development"/>
     <item
         android:id="@+id/quest"
@@ -21,7 +21,7 @@
         android:icon="@drawable/ic_programming"/>
     <item
         android:id="@+id/compiler"
-        android:title="@string/code_compiler"
+        android:title="@string/test_your_code"
         android:icon="@drawable/ic_compiler"/>
     <item
         android:id="@+id/exit"

@@ -16,5 +16,7 @@
     <string name="competitive_programming">Competitive Programming</string>
     <string name="interview_tips">Interview Tips</string>
     <string name="programming_languages">Programming languages</string>
+    <string name="software_development">Software Development</string>
+    <string name="test_your_code">Test your Code</string>
 
 </resources>
