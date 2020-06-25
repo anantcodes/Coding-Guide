@@ -41,6 +41,7 @@
             android:layout_height="wrap_content"
             android:text="Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web-based internet applications (web apps), electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web engineering, web design, web content development, client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce development."
             android:layout_below="@+id/txtWeb"
+            android:textColor="@color/colorPrimaryDark"
             android:textAlignment="center"/>
 
         <TextView
@@ -49,6 +50,7 @@
             android:layout_height="wrap_content"
             android:text="What you need to know: HTML, Javascript, Django, C/C++, ASP.NET, PHP, Python, Ruby, Rails etc."
             android:layout_below="@+id/txtWebD"
+            android:textColor="#000000"
             android:textStyle="bold"/>
 
         <Button
@@ -79,6 +81,7 @@
             android:layout_height="wrap_content"
             android:text="Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones. These applications can be pre-installed on phones during manufacturing platforms, or delivered as web applications using server-side or client-side processing (e.g., JavaScript) to provide an  experience within a Web browser. Application software developers also must consider a long array of screen sizes, hardware specifications, and configurations because of intense competition in mobile software and changes within each of the platforms."
              android:layout_below="@+id/txtMobile"
+            android:textColor="@color/colorPrimaryDark"
             android:textAlignment="center"/>
 
         <TextView
@@ -87,6 +90,7 @@
             android:layout_height="wrap_content"
             android:text="What you need to know: Android, Swift (for iOS), Objective C, HTML5, Java, C#"
             android:layout_below="@+id/txtMobileD"
+            android:textColor="#000000"
             android:textStyle="bold"/>
 
         <Button
@@ -116,6 +120,7 @@
             android:layout_height="wrap_content"
             android:text="Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from many structural and unstructured data.Data science is related to data mining, deep learning and big data."
             android:layout_below="@+id/txtDS"
+            android:textColor="@color/colorPrimaryDark"
             android:textAlignment="center"/>
 
         <TextView
@@ -124,6 +129,7 @@
             android:layout_height="wrap_content"
             android:text="What you need to know: C/C++, MATLAB, Python"
             android:layout_below="@+id/txtDSD"
+            android:textColor="#000000"
             android:textStyle="bold"/>
 
         <Button
@@ -155,7 +161,8 @@
             android:layout_height="wrap_content"
            android:text="An application programming interface (API) is a computing interface which defines interactions between multiple software intermediaries. It defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc. It can also provide extension mechanisms so that users can extend existing functionality in various ways and to varying degrees. An API can be entirely custom, specific to a component, or it can be designed based on an industry standard to ensure interoperability. "
             android:layout_below="@+id/txtAPI"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:id="@+id/txtAPILang"
@@ -163,7 +170,8 @@
             android:layout_height="wrap_content"
            android:text="What you need to know: APIs are written for specific platforms or functions, and each API will have the programming language of the platform/device/site/service it’s designed for"
             android:layout_below="@+id/txtAPID"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btnAPI"
@@ -193,7 +201,8 @@
             android:layout_height="wrap_content"
             android:text="Security, as part of the software development process, is an ongoing process involving people and practices, and ensures application confidentiality, integrity, and availability. Secure software is the result of security aware software development processes where security is built in and thus software is developed with security in mind. Security is most effective if planned and managed throughout every stage of software development life cycle (SDLC), especially in critical applications or those that process sensitive information."
             android:layout_below="@+id/txtSSD"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:id="@+id/txtSSDLang"
@@ -201,7 +210,8 @@
             android:layout_height="wrap_content"
             android:text="What you need to know: the programming language relevant to the system that needs to be tested"
             android:layout_below="@+id/txtSSDD"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btnSSD"
@@ -232,7 +242,8 @@
             android:layout_height="wrap_content"
             android:text="Cloud computing is the on-demand availability of computer system resources, especially data storage (cloud storage) and computing power, without direct active management by the user. The term is generally used to describe data centers available to many users over the Internet. Large clouds, predominant today, often have functions distributed over multiple locations from central servers. If the connection to the user is relatively close, it may be designated an edge server."
             android:layout_below="@+id/txtCC"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"/>
 
         <TextView
             android:id="@+id/txtCCLang"
@@ -240,7 +251,8 @@
             android:layout_height="wrap_content"
             android:text="What you need to know: Java, XML, R, Erlang, Google’s Go!, Clojure and others"
             android:layout_below="@+id/txtCCD"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="#000000"/>
 
         <Button
             android:id="@+id/btnCC"

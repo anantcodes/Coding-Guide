@@ -45,12 +45,13 @@
 
     <Button
         android:id="@+id/btnJava"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn Java"
         android:layout_below="@id/txtJavaD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
 
     <TextView
@@ -74,12 +75,13 @@
 
     <Button
         android:id="@+id/btnCPlus"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn C++"
         android:layout_below="@id/txtCPlusD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
 
 
@@ -104,12 +106,13 @@
 
     <Button
         android:id="@+id/btnC"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn C"
         android:layout_below="@id/txtCD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
 
     <TextView
@@ -133,12 +136,13 @@
 
     <Button
         android:id="@+id/btnPython"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn Python"
         android:layout_below="@id/txtPythonD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
     <TextView
         android:id="@+id/txtKotlin"
@@ -161,12 +165,13 @@
 
     <Button
         android:id="@+id/btnKotlin"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn Kotlin"
         android:layout_below="@id/txtKotlinD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
 
     <TextView
@@ -190,12 +195,13 @@
 
     <Button
         android:id="@+id/btnJS"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn JavaScript"
         android:layout_below="@id/txtJSDD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
 
     <TextView
@@ -219,12 +225,13 @@
 
     <Button
         android:id="@+id/btnGo"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn Golang"
         android:layout_below="@id/txtGoD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
     <TextView
         android:id="@+id/txtCS"
@@ -247,12 +254,13 @@
 
     <Button
         android:id="@+id/btnCS"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn C#"
         android:layout_below="@id/txtCSD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
 
     <TextView
@@ -276,12 +284,13 @@
 
     <Button
         android:id="@+id/btnHtml"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn HTML"
         android:layout_below="@id/txtHtmlD"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"/>
 
 
     <TextView
@@ -305,13 +314,14 @@
 
     <Button
         android:id="@+id/btnCSS"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Learn CSS"
         android:layout_below="@id/txtCSSD"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/mybutton"/>
 
 
 
