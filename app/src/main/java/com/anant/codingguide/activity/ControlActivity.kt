@@ -1,19 +1,22 @@
 package com.anant.codingguide.activity
 
 //import android.widget.Toolbar
+
+import android.content.DialogInterface
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import com.anant.codingguide.R
 import com.anant.codingguide.fragment.*
+import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AlertDialog.Builder
 
 
 class ControlActivity : AppCompatActivity() {
@@ -101,7 +104,18 @@ class ControlActivity : AppCompatActivity() {
 
 
                 R.id.exit->{
-                    Toast.makeText(applicationContext,"Exit",Toast.LENGTH_LONG).show()
+                    val builder: android.app.AlertDialog.Builder =
+                        android.app.AlertDialog.Builder(this@ControlActivity)
+                    builder.setTitle(R.string.app_name)
+                    builder.setIcon(R.mipmap.ic_launcher)
+                    builder.setMessage("Do you want to exit?")
+                        .setCancelable(false)
+                        .setPositiveButton("Yes",
+                            DialogInterface.OnClickListener { dialog, id -> finish() })
+                        .setNegativeButton("No",
+                            DialogInterface.OnClickListener { dialog, id -> dialog.cancel() })
+                    val alert: android.app.AlertDialog? = builder.create()
+                    alert?.show()
                 }
 
 

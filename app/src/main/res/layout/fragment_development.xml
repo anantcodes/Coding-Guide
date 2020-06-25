@@ -53,12 +53,13 @@
 
         <Button
             android:id="@+id/btnWeb"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Start Web Development"
             android:layout_below="@id/txtWebLang"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"/>
 
 
         <TextView
@@ -90,12 +91,13 @@
 
         <Button
             android:id="@+id/btnMobile"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Start Mobile Development"
             android:layout_below="@id/txtMobileLang"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"/>
 
         <TextView
             android:id="@+id/txtDS"
@@ -126,12 +128,14 @@
 
         <Button
             android:id="@+id/btnDS"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="More about Data Science"
             android:layout_below="@id/txtDSLang"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"
+            />
 
 
         <TextView
@@ -163,12 +167,13 @@
 
         <Button
             android:id="@+id/btnAPI"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="More about API Development"
             android:layout_below="@id/txtAPILang"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"/>
 
 
         <TextView
@@ -200,12 +205,13 @@
 
         <Button
             android:id="@+id/btnSSD"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="More about Security Software Development"
             android:layout_below="@id/txtSSDLang"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"/>
 
 
 
@@ -238,13 +244,14 @@
 
         <Button
             android:id="@+id/btnCC"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="More about Cloud Computing"
             android:layout_below="@id/txtCCLang"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="100dp"/>
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/mybutton"/>
 
 
 

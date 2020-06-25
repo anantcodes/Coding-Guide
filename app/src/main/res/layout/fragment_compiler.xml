@@ -38,10 +38,11 @@
 
     <Button
         android:id="@+id/btnIde"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="IDEONE"
         android:layout_below="@+id/icBelow"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"/>
 
 </RelativeLayout>
