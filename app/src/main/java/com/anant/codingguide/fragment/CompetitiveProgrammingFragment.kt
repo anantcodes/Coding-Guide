@@ -26,6 +26,7 @@ class CompetitiveProgrammingFragment : Fragment() {
     lateinit var txtHere5:TextView
     lateinit var btnCodeChef:Button
     lateinit var btnCodeforces:Button
+    lateinit var btnHacker:Button
 
 
     override fun onCreateView(
@@ -43,6 +44,7 @@ class CompetitiveProgrammingFragment : Fragment() {
         txtHere5=view.findViewById(R.id.txtHere5)
         btnCodeChef=view.findViewById(R.id.btnCodeChef)
         btnCodeforces=view.findViewById(R.id.btnCodeforces)
+        btnHacker=view.findViewById(R.id.btnHacker)
 
 
         txtHere1.setOnClickListener {
@@ -78,6 +80,11 @@ class CompetitiveProgrammingFragment : Fragment() {
 
         btnCodeforces.setOnClickListener {
             activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("http://codeforces.com/problemset")))
+
+        }
+
+        btnHacker.setOnClickListener {
+            activity?.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.hackerrank.com/dashboard")))
 
         }
 
