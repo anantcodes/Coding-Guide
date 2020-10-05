@@ -1,6 +1,5 @@
 package com.anant.codingguide.activity
 
-//import android.widget.Toolbar
 
 import android.content.DialogInterface
 import android.os.Bundle

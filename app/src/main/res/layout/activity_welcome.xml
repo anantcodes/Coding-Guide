@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.WelcomeActivity"
-    android:background="#bbdefb">
+    android:background="@color/blueOcean">
 
 
     <TextView
@@ -15,7 +15,8 @@
         android:text="@string/welcome_to_coding_guide"
         android:layout_centerHorizontal="true"
         android:textSize="28sp"
-        android:textColor="#1a237e"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
         android:padding="16dp"
         android:layout_marginTop="40dp" />
 
@@ -23,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/cod"
+        android:elevation="4dp"
         android:layout_below="@id/txtWelcome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"/>
@@ -33,9 +35,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txtWelcome"
         android:layout_centerInParent="true"
+        android:elevation="4dp"
         android:layout_marginTop="300dp"
-        android:background="@color/colorPrimary"
-        android:textColor="#000000"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/white"
         android:text="Get Started"/>
 
 
