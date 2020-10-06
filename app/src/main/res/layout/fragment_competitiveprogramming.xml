@@ -1,231 +1,230 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.CompetitiveProgrammingFragment"
     android:background="#bbdefb">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="90dp"
+        tools:context=".fragment.CompetitiveProgrammingFragment">
 
-    <TextView
-        android:id="@+id/txtHead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="How to prepare for Competitive Programming?"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:textColor="#000000"
-        android:textStyle="italic"
-        android:layout_marginTop="15dp"
-        android:padding="10dp"/>
+        <TextView
+            android:id="@+id/txtHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:text="How to prepare for Competitive Programming?"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="italic" />
 
-    <TextView
-        android:id="@+id/txtChoose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1) Choose a programming language:"
-        android:layout_below="@+id/txtHead"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHead"
+            android:padding="10dp"
+            android:text="1) Choose a programming language:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txtLang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtChoose"
-        android:text="To learn a particular language click "
-        android:textSize="16sp"
-        android:textColor="#000000"
-        android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/txtLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtChoose"
+            android:layout_marginStart="10dp"
+            android:text="To learn a particular language click "
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/txtHere1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="here"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_below="@id/txtChoose"
-        android:layout_toEndOf="@+id/txtLang"
-        android:textSize="16sp"/>
-
-
-
-    <TextView
-        android:id="@+id/txtTC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2) Understand the Concept of Time and Space Complexity:"
-        android:layout_below="@+id/txtHere1"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/txtT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To know more about Time Complexity click "
-        android:textSize="16sp"
-        android:layout_below="@+id/txtTC"
-        android:textColor="#000000"
-        android:layout_marginStart="10dp"/>
-
-    <TextView
-        android:id="@+id/txtHere2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="here"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_below="@id/txtTC"
-        android:layout_toEndOf="@+id/txtT"
-        android:textSize="16sp"/>
-
-    <TextView
-        android:id="@+id/txtS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To know more about Space Complexity click "
-        android:textSize="16sp"
-        android:layout_below="@+id/txtT"
-        android:textColor="#000000"
-        android:layout_marginStart="10dp"/>
-
-    <TextView
-        android:id="@+id/txtHere3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="here"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_below="@id/txtT"
-        android:layout_toEndOf="@+id/txtS"
-        android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/txtHere1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtChoose"
+            android:layout_toEndOf="@+id/txtLang"
+            android:text="here"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
 
 
+        <TextView
+            android:id="@+id/txtTC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHere1"
+            android:padding="10dp"
+            android:text="2) Understand the Concept of Time and Space Complexity:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/txtDSA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3) Learn the Fundamentals of Data Structures and Algorithms:"
-        android:layout_below="@+id/txtHere3"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTC"
+            android:layout_marginStart="10dp"
+            android:text="To know more about Time Complexity click "
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/txtD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To study about Data Structures click "
-        android:textSize="16sp"
-        android:layout_below="@+id/txtDSA"
-        android:textColor="#000000"
-        android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/txtHere2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTC"
+            android:layout_toEndOf="@+id/txtT"
+            android:text="here"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/txtHere4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="here"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_below="@id/txtDSA"
-        android:layout_toEndOf="@+id/txtD"
-        android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/txtS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtT"
+            android:layout_marginStart="10dp"
+            android:text="To know more about Space Complexity click "
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/txtA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To study about Algorithms click "
-        android:textSize="16sp"
-        android:layout_below="@+id/txtD"
-        android:textColor="#000000"
-        android:layout_marginStart="10dp"/>
-
-    <TextView
-        android:id="@+id/txtHere5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="here"
-        android:textColor="@android:color/holo_red_dark"
-        android:layout_below="@id/txtD"
-        android:layout_toEndOf="@+id/txtA"
-        android:textSize="16sp"/>
-
-
-    <TextView
-        android:id="@+id/txtSolve"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4) Practice:"
-        android:layout_below="@+id/txtHere5"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/txtCodeChef"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To practice on CodeChef :"
-        android:textSize="16sp"
-        android:layout_below="@+id/txtSolve"
-        android:textColor="#000000"
-        android:layout_marginStart="10dp"/>
-
-   <Button
-       android:id="@+id/btnCodeChef"
-       android:layout_width="150dp"
-       android:layout_height="wrap_content"
-       android:text="Open CodeChef"
-       android:layout_below="@id/txtCodeChef"
-       android:layout_centerHorizontal="true"
-       android:background="@drawable/mybutton"/>
-
-    <TextView
-        android:id="@+id/txtCodeforces"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To practice on Codeforces :"
-        android:textSize="16sp"
-        android:layout_below="@+id/btnCodeChef"
-        android:textColor="#000000"
-        android:layout_marginStart="10dp"/>
-
-    <Button
-        android:id="@+id/btnCodeforces"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Open Codeforces"
-        android:layout_below="@id/txtCodeforces"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/mybutton"/>
-
-    <TextView
-        android:id="@+id/txtHacker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To practice on HackerRank :"
-        android:textSize="16sp"
-        android:layout_below="@+id/btnCodeforces"
-        android:textColor="#000000"
-        android:layout_marginStart="10dp"/>
-
-    <Button
-        android:id="@+id/btnHacker"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Open HackerRank"
-        android:layout_below="@id/txtHacker"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/mybutton" />
+        <TextView
+            android:id="@+id/txtHere3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtT"
+            android:layout_toEndOf="@+id/txtS"
+            android:text="here"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
 
 
+        <TextView
+            android:id="@+id/txtDSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHere3"
+            android:padding="10dp"
+            android:text="3) Learn the Fundamentals of Data Structures and Algorithms:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDSA"
+            android:layout_marginStart="10dp"
+            android:text="To study about Data Structures click "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtHere4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDSA"
+            android:layout_toEndOf="@+id/txtD"
+            android:text="here"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtD"
+            android:layout_marginStart="10dp"
+            android:text="To study about Algorithms click "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtHere5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtD"
+            android:layout_toEndOf="@+id/txtA"
+            android:text="here"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp" />
 
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/txtSolve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHere5"
+            android:padding="10dp"
+            android:text="4) Practice:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtCodeChef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSolve"
+            android:layout_marginStart="10dp"
+            android:text="To practice on CodeChef :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCodeChef"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCodeChef"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mybutton"
+            android:text="Open CodeChef" />
+
+        <TextView
+            android:id="@+id/txtCodeforces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCodeChef"
+            android:layout_marginStart="10dp"
+            android:text="To practice on Codeforces :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCodeforces"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCodeforces"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mybutton"
+            android:text="Open Codeforces" />
+
+        <TextView
+            android:id="@+id/txtHacker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCodeforces"
+            android:layout_marginStart="10dp"
+            android:text="To practice on HackerRank :"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnHacker"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtHacker"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mybutton"
+            android:text="Open HackerRank" />
+    </RelativeLayout>
+</ScrollView>
