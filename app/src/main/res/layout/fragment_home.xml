@@ -22,7 +22,6 @@
         android:layout_marginTop="15dp"
         android:padding="10dp"/>
 
-
     <TextView
         android:id="@+id/txtDate"
         android:layout_width="wrap_content"
@@ -60,9 +59,8 @@
         android:layout_below="@id/txtDevelop"
         android:src="@drawable/code"
         android:layout_centerHorizontal="true"/>
-
-
-    <TextView
+        
+        <TextView
         android:id="@+id/txtCoffee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
