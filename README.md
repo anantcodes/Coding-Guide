@@ -9,7 +9,6 @@ Your contributions are more than welcome.
 # Competitive Programming 
 Want to land a job at Google? Want to crack interviews of software tech-giants like Amazon or Microsoft? Here comes Competitive Programming as the knight in the shining armor :)
 
-![2019 ACM-ICPC World Finals at Porto, Portugal](https://miro.medium.com/max/700/1*ET6rUxY3ll6u7ohuhEXIAw.jpeg)
 
 Many of you might have heard about the term Competitive Programming and would have wondered what it means. This application provides you with a roadmap as well as a brief introduction to it.The reason being it helps one develop logical aptitude and break down complex problems into simpler sub-problems Anyone who wishes to dive into the world of coding and are not aware of the proper way to do so, the app comes to your rescue :)
 
