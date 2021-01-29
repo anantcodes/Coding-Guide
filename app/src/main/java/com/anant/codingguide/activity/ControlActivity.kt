@@ -1,6 +1,5 @@
 package com.anant.codingguide.activity
 
-//import android.widget.Toolbar
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -17,6 +16,7 @@ import com.anant.codingguide.R
 import com.anant.codingguide.fragment.*
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AlertDialog.Builder
+import androidx.fragment.app.FragmentTransaction
 
 
 class ControlActivity : AppCompatActivity() {
@@ -71,7 +71,9 @@ class ControlActivity : AppCompatActivity() {
                 R.id.language->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         LanguagesFragment()
-                    ).commit()
+                    )
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                        .commit()
                     supportActionBar?.title="Programming languages"
                     drawerLayout.closeDrawers()
                 }
@@ -79,7 +81,9 @@ class ControlActivity : AppCompatActivity() {
                 R.id.dev->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         DevelopmentFragment()
-                    ).commit()
+                    )
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                        .commit()
                     supportActionBar?.title="Software Development"
                     drawerLayout.closeDrawers()
                 }
@@ -87,7 +91,9 @@ class ControlActivity : AppCompatActivity() {
                 R.id.quest->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         CompetitiveProgrammingFragment()
-                    ).commit()
+                    )
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                        .commit()
                     supportActionBar?.title="Competitive programming"
                     drawerLayout.closeDrawers()
                 }
@@ -97,7 +103,9 @@ class ControlActivity : AppCompatActivity() {
                 R.id.compiler->{
                     supportFragmentManager.beginTransaction().replace(R.id.frame,
                         CompilerFragment()
-                    ).commit()
+                    )
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                        .commit()
                     supportActionBar?.title="Test your Code"
                     drawerLayout.closeDrawers()
                 }
