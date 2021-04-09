@@ -4,7 +4,7 @@ Learn how to start coding.
 
 Developed for people new to the background of coding.
 
-Your contributions are more than welcome.
+Your contributions are more than welcome :)
 
 # Competitive Programming 
 Want to land a job at Google? Want to crack interviews of software tech-giants like Amazon or Microsoft? Here comes Competitive Programming as the knight in the shining armor :)
